@@ -17,7 +17,7 @@ const pool = new Pool({
 
 //Create Table
 /* const sql = `
-    CREATE TABLE IF NOT EXISTS tarefas(
+    CREATE TABLE IF NOT EXISTS livros(
         id serial primary key,
         autor varchar (50),
         titulo varchar (50),
@@ -31,11 +31,11 @@ pool.query(sql, function (erro, resultado) {
         throw erro
 
     console.log('Tabela criada com sucesso!');
-}); */
-
+});
+ */
 //INSERT
 const sql = `
-    INSERT INTO tarefas (autor, titulo, anopublic, genero, lido)
+    INSERT INTO livros (autor, titulo, anopublic, genero, lido)
         VALUES
             ('Julio Verne', 'Volta ao Mundo em 80 Dias', '1800', 'Ficção', true),
             ('Julio Verne', 'Viagem ao Centro da Terra', '1800', 'Ficção', true),
