@@ -1,4 +1,5 @@
 const Pool = require('pg').Pool;
+const cors = require('cors');
 
 // 1- Abrir conexão
 // 2- Executar comando SQL
@@ -10,10 +11,10 @@ server.use(express.json());
 server.use(cors());
 
 const pool = new Pool({
-    user: 'mwdjwugnlerish',
-    password: 'd4cb70cfcb644791928e2f5a590da4e69ba1fd6a138d49a9030900a120b7899a',
-    host: 'ec2-52-87-135-240.compute-1.amazonaws.com',
-    database: 'dbr99e9b5i24q9',
+    user: 'gjjgdoxfennltc',
+    password: '87322e5f3845d28706d48c92189230fa9d0c496276cedfc2e692d744463be860',
+    host: 'ec2-52-22-216-69.compute-1.amazonaws.com',
+    database: 'dfcbtfgfhm8nlk',
     port: 5432,
     ssl: { rejectUnauthorized: false }
 })
